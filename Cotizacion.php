@@ -3,7 +3,7 @@ class Cotizacion
 {
     
     /**
-     * Obtiene las cotizaciones del euro del sitio web https://www.dolarsi.com
+     * Obtiene las cotizaciones del euro y dolar del sitio web https://www.dolarsi.com
      */
     public function obtener_cotizaciones() {
         try{
@@ -46,6 +46,8 @@ class Cotizacion
 
     /**
      * Realiza el cálculo según el tipo de cambio (ARS, EUR) a dolar
+     * valor: es el monto
+     * cambio: es el tipo de cambio (ARS,EUR)
      */
     public function calcular_usd($valor,$cambio){
         try{            
@@ -79,6 +81,7 @@ class Cotizacion
 
     /**
      * Devuelve el valor del dolar equivalente a 1
+     * cambio: es el tipo de cambio (ARS,EUR)
      */
     public function obtener_valor_usd($cambio){
         try{            

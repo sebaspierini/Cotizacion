@@ -49,6 +49,8 @@ class CotizacionApi
 
     /**
      * Realiza el cálculo según el tipo de cambio (ARS, EUR) a dolar
+     * valor: es el monto
+     * cambio: es el tipo de cambio (ARS,EUR)
      */
     public function calcular_usd($valor,$cambio){
         try{
@@ -82,6 +84,7 @@ class CotizacionApi
 
     /**
      * Devuelve el valor del dolar equivalente a 1
+     * cambio: es el tipo de cambio (ARS,EUR)
      */
     public function obtener_valor_usd($cambio){
         try{            
