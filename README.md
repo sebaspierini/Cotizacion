@@ -1,4 +1,4 @@
-# challenge
+# Cotización
 
 El proyecto se encarga de devolver la cotizacion del dolar según el tipo de cambio (ARS, EUR) y pasando como argumentos valores expresados en ARS o en EUR realiza la conversión. Todo esto se hace por linea de comandos.
 
